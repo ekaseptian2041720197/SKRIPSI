@@ -4,8 +4,9 @@ use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\siswaController;
 use App\Http\Controllers\NotifikasiController;
-
+use App\Models\siswa;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 
 //Route Notifikasi
 Route::get('/notif', [NotifikasiController::class, 'notif'])->name('notif');
+
+//Route siswa
+Route::get('/siswa', [siswaController::class, 'siswa'])->name('siswa');
